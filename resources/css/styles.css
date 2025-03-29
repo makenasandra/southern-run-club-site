@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+position: relative;
+text-align: center;
+margin: 0;
+}
+
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+}
+
+.logo{
+    font-size: 2rem;
+    color: aliceblue;
+    margin-left: 1rem;
+}
+
+.nav-item{
+    list-style: none;
+    display: inline;
+    margin-right: 1rem;
+}
+
+.nav-item a{
+    color: white;
+}
+
+main{
+    padding-top: 2rem;
+}
+
+h2{
+    font-size: 2rem;
+    color:  green;
+}
+
+#banner{
+    background-color: rgb(255, 255, 132);
+    padding: 1rem;
+}
+
+
+.events{
+    display: flex;
+flex-wrap: wrap;
+}
+
+.event{
+    flex: 1 1 20rem;
+    background-color: rgb(227, 255, 171);
+    margin: 1rem;
+    padding: .7rem;
+    border-radius: 2%;
+}
+
+.sign-up-content{
+    background-color: rgb(227, 255, 171);
+    padding: .7rem 1.7rem;
+}
+
+.sign-up-content p{
+    text-align: left;
+}
+
+.sign-up-content ul{
+    text-align: left;
+}
+
+.sign-up-content button{
+    background-color: rgb(130, 175, 41);
+    color:aliceblue;
+    border-radius: 5%;
+    padding: .5rem;
+}
+
+.image-gallery{
+    display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-auto-flow: row dense;
+}
+
+.image-container{
+    margin: 1rem;
+}
+
+.image-container img{
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    background-color: rgb(255, 255, 132);
+}
+
+footer .content{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+
+
