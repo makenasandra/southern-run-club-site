@@ -1,116 +1,133 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 16px;
+html {
+  font-size: 16px;
 }
 
-body{
-position: relative;
-text-align: center;
-margin: 0;
+body {
+  position: relative;
+  text-align: center;
+  margin: 0;
 }
 
-header{
-    position: fixed;
-    top:0;
-    left: 0;
-    right:0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: green;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: green;
 }
 
-.logo{
-    font-size: 2rem;
-    color: aliceblue;
-    margin-left: 1rem;
+.logo {
+  font-size: 2rem;
+  color: aliceblue;
+  margin-left: 1rem;
 }
 
-.nav-item{
-    list-style: none;
-    display: inline;
-    margin-right: 1rem;
+.nav-item {
+  list-style: none;
+  display: inline;
+  margin-right: 1rem;
 }
 
-.nav-item a{
-    color: white;
+.nav-item a {
+  color: white;
+  text-decoration: none;
 }
 
-main{
-    padding-top: 2rem;
+.nav-item a:hover {
+  text-decoration: underline;
+  font-weight: 600;
 }
 
-h2{
-    font-size: 2rem;
-    color:  green;
+@media only screen and (max-width: 450px) {
+  .logo {
+    font-size: 1rem;
+  }
+  .nav-list ul {
+    padding-left: 1.5rem;
+  }
 }
 
-#banner{
-    background-color: rgb(255, 255, 132);
-    padding: 1rem;
+main {
+  padding-top: 2rem;
 }
 
-
-.events{
-    display: flex;
-flex-wrap: wrap;
+h2 {
+  font-size: 2rem;
+  color: green;
 }
 
-.event{
-    flex: 1 1 20rem;
-    background-color: rgb(227, 255, 171);
-    margin: 1rem;
-    padding: .7rem;
-    border-radius: 2%;
+#banner {
+  background-color: rgb(255, 255, 132);
+  padding: 1rem;
 }
 
-.sign-up-content{
-    background-color: rgb(227, 255, 171);
-    padding: .7rem 1.7rem;
+.events {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.sign-up-content p{
-    text-align: left;
+.event {
+  flex: 1 1 20rem;
+  background-color: rgb(227, 255, 171);
+  margin: 1rem;
+  padding: 0.7rem;
+  border-radius: 2%;
 }
 
-.sign-up-content ul{
-    text-align: left;
+.sign-up-content {
+  background-color: rgb(227, 255, 171);
+  padding: 0.7rem 1.7rem;
 }
 
-.sign-up-content button{
-    background-color: rgb(130, 175, 41);
-    color:aliceblue;
-    border-radius: 5%;
-    padding: .5rem;
+.sign-up-content p {
+  text-align: left;
 }
 
-.image-gallery{
-    display: grid;
+.sign-up-content ul {
+  text-align: left;
+}
+
+.sign-up-content button {
+  background-color: rgb(130, 175, 41);
+  color: aliceblue;
+  border-radius: 5%;
+  padding: 0.5rem;
+}
+
+.image-gallery {
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-  grid-auto-flow: row dense;
+  grid-auto-flow: row;
 }
 
-.image-container{
-    margin: 1rem;
+.image-container {
+  margin: 0 0.2rem;
 }
 
-.image-container img{
-    width: 100%;
-    height: auto;
+.image-container img {
+  width: 100%;
+  height: 70%;
 }
 
-footer{
-    background-color: rgb(255, 255, 132);
+footer {
+  background-color: rgb(255, 255, 132);
 }
 
-footer .content{
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
-
-
+@media only screen and (max-width: 450px) {
+  footer .content {
+    padding: 1rem 0.3rem;
+  }
+}
